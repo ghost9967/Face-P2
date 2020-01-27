@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css?family=Bangers&display=swap');
+*
+{
+    margin:0;
+    padding: 0;
+    font-family: 'Bangers', cursive;
+    letter-spacing: 0.1em;
+}
+#head {
+   
+    display:flex;
+       margin:2px;
+       padding: 5px;
+       background-color: rgba(0,0,0);
+       text-align: center;
+    }
+
+#logo
+{
+    font-size:1.8em;
+    font-weight:600;
+    color:#F05136;
+    margin-right:auto;
+    cursor:pointer;
+    text-align: center;
+}
+#center
+{
+    margin:auto;
+}
+.tile
+{
+    padding: 10px;
+    margin: -2px;
+    background-color: orangered;
+    color: black;
+    border-style: solid;
+    font-size: 1em;
+}
+.tile-inner
+{
+    padding: 10px;
+    margin: -2px;
+    background-color: orangered;
+    color: black;
+    border-style: solid;
+    font-size: 1em;
+}
+#board
+ {
+    display:flex;
+    top: 20%;
+    align-items:center;
+ }
+ .board
+ {
+     margin: auto;
+     padding: 20px;
+ }
+ #query
+ {
+     padding:10px;
+     margin: auto;
+     background-color: black;
+ }
+ #fo
+ {
+     margin:auto;
+ }
+ #dir
+ {
+     margin: 5px;
+     padding: 8px;
+ }
+ #step
+ {
+    margin: 5px;
+    padding: 8px;
+ }
+ #dir2
+ {
+     margin: 5px;
+     padding: 8px;
+ }
+ #step2
+ {
+    margin: 5px;
+    padding: 8px;
+ }
+ #texr
+ {
+     color: orangered;
+     font-size: 1.2em;
+ }
+ #submit
+ {
+     padding: 8px;
+     margin: 5px;
+     border-radius: 10px;
+     border: 2px solid black;
+     transition: 1.5s;
+ }
+ #submit:hover
+{
+    color: orangered;
+    background-color: black;
+}
+#submit2
+{
+    padding: 8px;
+    margin: 5px;
+    border-radius: 10px;
+    border: 2px solid black;
+    transition: 1.5s;
+}
+#submit2:hover
+{
+   color: orangered;
+   background-color: black;
+}
+input
+{
+border: 2px solid orangered;
+}
+#begin
+{
+    padding: 8px;
+    margin: 5px;
+    border-radius: 10px;
+    border: 2px solid black;
+    transition: 1.5s;
+}
+#begin:hover
+{
+    color: orangered;
+    background-color: black;
+    cursor: pointer;
+}
+#begin2
+{
+    padding: 8px;
+    margin: 5px;
+    border-radius: 10px;
+    border: 2px solid black;
+    transition: 1.5s;
+}
+#begin2:hover
+{
+    color: orangered;
+    background-color: black;
+    cursor: pointer;
+}
+.tile-scale
+{
+    padding: 10px;
+    margin: 2px;
+    color: black;
+    font-size: 1em;
+    border-style: solid;
+}
+#queen1
+{
+    color: white;
+}
+#queen2
+{
+    color: black;
+}
+#log
+{
+    margin:auto;
+    padding:5px;
+    display: flex;
+}
+#log1 , #log2
+{
+    margin: auto;
+    padding:5px;
+}

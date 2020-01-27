@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href='css/style.css'>
+    <script src="https://kit.fontawesome.com/0b14d520fa.js" crossorigin="anonymous"></script>
+    <title>Game of Chess</title>
+</head>
+<body>
+    <nav id='head'>
+        <div id='center'><h1 id='logo'>Game of Chess</h1></div>
+    </nav>
+    <br>
+    <br>
+    <article id='board'>
+        <div class='board'>
+        <div id='board-8'>
+            <span id='7,0' class='tile'>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <span id='7,1' class='tile'>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <span id='7,2' class='tile'>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <span id='7,3' class='tile'>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <span id='7,4' class='tile'>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <span id='7,5' class='tile'>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <span id='7,6' class='tile'>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <span id='7,7' class='tile'>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        </div>
+        <br>
+        <div id='board-7'>
+            <span id='6,0' class='tile-inner'>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <span id='6,1' class='tile-inner'>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <span id='6,2' class='tile-inner'>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <span id='6,3' class='tile-inner'>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <span id='6,4' class='tile-inner'>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <span id='6,5' class='tile-inner'>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <span id='6,6' class='tile-inner'>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <span id='6,7' class='tile-inner'>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        </div>
+        <br>
+        <div id='board-6'>
+            <span id='5,0' class='tile-inner'>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <span id='5,1' class='tile-inner'>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <span id='5,2' class='tile-inner'>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <span id='5,3' class='tile-inner'>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <span id='5,4' class='tile-inner'>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <span id='5,5' class='tile-inner'>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <span id='5,6' class='tile-inner'>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <span id='5,7' class='tile-inner'>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        </div>
+        <br>
+        <div id='board-5'>
+            <span id='4,0' class='tile-inner'>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <span id='4,1' class='tile-inner'>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <span id='4,2' class='tile-inner'>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <span id='4,3' class='tile-inner'>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <span id='4,4' class='tile-inner'>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <span id='4,5' class='tile-inner'>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <span id='4,6' class='tile-inner'>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <span id='4,7' class='tile-inner'>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        </div>
+        <br>
+        <div id='board-4'>
+            <span id='3,0' class='tile-inner'>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <span id='3,1' class='tile-inner'>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <span id='3,2' class='tile-inner'>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <span id='3,3' class='tile-inner'>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <span id='3,4' class='tile-inner'>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <span id='3,5' class='tile-inner'>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <span id='3,6' class='tile-inner'>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <span id='3,7' class='tile-inner'>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        </div>
+        <br>
+        <div id='board-3'>
+            <span id='2,0' class='tile-inner'>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <span id='2,1' class='tile-inner'>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <span id='2,2' class='tile-inner'>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <span id='2,3' class='tile-inner'>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <span id='2,4' class='tile-inner'>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <span id='2,5' class='tile-inner'>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <span id='2,6' class='tile-inner'>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <span id='2,7' class='tile-inner'>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        </div>
+        <br>
+        <div id='board-2'>
+            <span id='1,0' class='tile-inner'>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <span id='1,1' class='tile-inner'>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <span id='1,2' class='tile-inner'>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <span id='1,3' class='tile-inner'>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <span id='1,4' class='tile-inner'>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <span id='1,5' class='tile-inner'>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <span id='1,6' class='tile-inner'>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <span id='12,' class='tile-inner'>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        </div>
+        <br>
+        <div id='board-1'>
+            <span id='0,0' class='tile'>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <span id='0,1' class='tile'>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <span id='0,2' class='tile'>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <span id='0,3' class='tile'>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <span id='0,4' class='tile'>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <span id='0,5' class='tile'>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <span id='0,6' class='tile'>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <span id='0,7' class='tile'>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        </div>
+    </div>
+    </article>
+    <br>
+    <br>
+    <article id='query'>
+    <div id='fo'>
+        <center>
+            <span id='texr'>Enter Game Steps for Queen 1</span>
+            <input type='text' id='dir' placeholder="Enter Direction" maxlength="2" required disabled>
+            <input type='number' id='step' placeholder="Enter Steps" required disabled>
+            <input type='submit' id='submit' value='Submit' required disabled>
+            <button id='begin'>Begin</button>
+        </center>
+    </div>
+    <div id='fo'>
+        <center>
+            <span id='texr'>Enter Game Steps for Queen 2</span>
+            <input type='text' id='dir2' placeholder="Enter Direction" maxlength="2" required disabled>
+            <input type='number' id='step2' placeholder="Enter Steps" required disabled>
+            <input type='submit' id='submit2' value='Submit' required disabled>
+            <button id='begin2' disabled>Begin</button>
+        </center>
+    </div>
+    </article>
+    <div id='log'>
+        <p>Queen 1: </p><span id='log1'>A Queen has to win to see logs</span>
+        <p>Queen 2: </p><span id='log2'>A Queen has to win to see logs</span>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
